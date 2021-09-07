@@ -1,12 +1,12 @@
 <?php
 
 namespace app\controllers;
-
 use app\models\Movies;
 use app\models\MoviesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+
 
 /**
  * MoviesController implements the CRUD actions for Movies model.
@@ -21,7 +21,7 @@ class MoviesController extends Controller
     public function actionMovie()
     {
 
-        $movie=Movies::find()->all();
+        $movie = Movies::find()->all();
         return $this->render('home', ['movie' => $movie]);
     }
     public function behaviors()
@@ -38,22 +38,6 @@ class MoviesController extends Controller
             ]
         );
     }
-
-    /**
-     * Lists all Movies models.
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        $searchModel = new MoviesSearch();
-        $dataProvider = $searchModel->search($this->request->queryParams);
-
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
-    }
-
     /**
      * Displays a single Movies model.
      * @param int $id ID
@@ -137,5 +121,25 @@ class MoviesController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionIndex()
+    {
+        $movie = Movies::find()->all();
+        return $this->render('home', ['movie' => $movie]);
+    }
+
+    public function actionHome()
+    {
+        $movie = Movies::find()->all();
+        return $this->render('home', ['movie' => $movie]);
+    }
+
+    public function actionDetail($id)
+    {
+        $movie = Movies::findOne($id);
+        return $this->render('detail', [
+            'movie' => $movie,
+        ]);
     }
 }

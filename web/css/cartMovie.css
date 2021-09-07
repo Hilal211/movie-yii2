@@ -1,13 +1,27 @@
-.product-center {
+a:hover{
+  text-decoration: none;
+}
+.section {
+  margin-top:600px ;
+  padding: 50px 0 50px 0;
+}
+.title {
+  margin: -38rem 0 7rem 0;
+}
+.title h1 {
+  font-size: 30px;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  color:#994A89;
+}
+.movie-center {
     margin-top: -590px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 3rem 1rem;
   }
-  .pink{
-      color:#ff7c9c;
-  }
-  .product {
+  .movie {
     height: 29rem;
     background-color: #fff;
     box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
@@ -15,177 +29,35 @@
     text-align: center;
     transition: all 300ms ease-in-out;
   }
-  
-  .product:hover {
+  .movie:hover {
     box-shadow: 5px 5px 17px #809096b2;
   }
-  
-  .product-header {
+  .movie-header {
     position: relative;
     height: 20rem;
     background-color: #f6f2f1;
     transition: all 300ms ease-in-out;
     z-index: 0;
     border-radius: 20px 20px 0 0;
-
   }
-  
-  .product-header img {
+  .movie-header img {
     height: 100%;
     max-width: 100%;
     border-radius: 10px 10px 0 0;
   }
-  
-  .product-footer {
+  .movie-footer {
     padding: 2rem 1.6rem 1.6rem 1.6rem;
   }
-  
-  .product-footer h3 {
+  .movie-footer h3 {
     font-size: 20px;
     color: #43b3d9;
   }
-  
-  .rating {
-    color: #43b3d9;
-  }
-  
-  .product-footer .price {
+  .movie-footer .author {
     color: #ff7c9c;
     font-size: 25px;
   }
-  
-    /* .product:hover .product-header::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        border-radius: 1rem 1rem 0 0;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: background-color 800s ease-in-out;
-        z-index: 1;
-    } */
-  
-
-  
-  .product-header .icons span {
-    background-color: #fff;
-    font-size: 2.5rem;
-    display: block;
-    border-radius: 50%;
-    padding: 1.5rem 1.6rem;
-    line-height: 2rem;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-  }
-  
-  .product-header .icons span i {
-    transition: all 500ms ease-in-out;
-  }
-  
-  .product-header .icons span:not(:last-child) {
-    margin-bottom: 1rem;
-  }
-  
-  /* .product-header .icons span:hover {
-    background-color: #ff7c9c;
-    color: #fff;
-  } */
-  
-  /* .product:hover .icons {
-    opacity: 1;
-    transform: translate(0, -50%) scale(1);
-  } */
-  
-  .product-header .icons a {
-    display: block;
-    margin-bottom: 1rem;
-  }
-  
-  /* Exclusive Product */
-  .product-banner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 50rem;
-    background-color: #243a6f;
-  }
-  
-  .product-banner .left img {
-    object-fit: cover;
-    height: 100%;
-  }
-  
-  .product-banner .right {
-    align-self: center;
-    text-align: center;
-    padding: 1.6rem;
-  }
-  
-  .product-banner .content h2 {
-    color: #fbb419;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  
-  .product-banner .content .discount {
-    color: #b888ff;
-  }
-  
-  .product-banner .content h1 span {
-    color: #fff;
-    font-size: 6rem;
-    font-weight: 700;
-    display: block;
-    line-height: 1;
-  }
-  
-  @media only screen and (max-width: 996px) {
-    .product-banner .content h1 span {
-      font-size: 5rem;
-    }
-  }
-  
   @media only screen and (max-width: 768px) {
-    .product-banner {
-      grid-template-columns: 1fr;
-    }
-  
-    .product-banner .left {
-      display: none;
-    }
-  
-    .product-banner .content h1 span {
-      font-size: 4rem;
-    }
-  
-    .product-banner .content h2 {
-      font-size: 2rem;
-    }
-  
-    .product-banner .content a {
-      padding: 1rem 3rem;
-    }
-
     .title{
       text-align: center;
-
     }
-  }
-
-  .section {
-    margin-top:600px ;
-    padding: 50px 0 50px 0;
-  }
-  .title {
-    margin: -38rem 0 7rem 0;
-  }
-  
-  .title h1 {
-    font-size: 30px;
-    display: inline-block;
-    position: relative;
-    z-index: 0;
-    color:#994A89;
   }

@@ -61,25 +61,7 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
-    {
-        $movie=Movies::find()->all();
-        return $this->render('home', ['movie' => $movie]);
-    }
-
-    public function actionHome()
-    {
-        $movie=Movies::find()->all();
-        return $this->render('home', ['movie' => $movie]);
-    }
-
-    public function actionDetail($id)
-    {
-        $movie = Movies::findOne($id);
-        return $this->render('detail', [
-            'movie' => $movie,
-        ]);
-    }
+   
 
     /**
      * Login action.
